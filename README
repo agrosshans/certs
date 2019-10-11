@@ -1,0 +1,124 @@
+SwissSign Gold CA - G2
+  SwissSign EV Gold CA 2014 - G22
+    snb.ch
+https://www.swisssign.com/fr/support/ca-prod.html
+
+
+
+SwissSign Gold CA - G2 (root)
+62:DD:0B:E9:B9:F5:0A:16:3E:A0:F8:E7:5C:05:3B:1E:CA:57:EA:55:C8:68:8F:64:7C:68:81:F2:C8:35:7B:95
+Gold G2
+Key-ID: 5B:25:7B:96:A4:65:51:7E:B8:39:F3:C0:78:66:5E:E8:3A:E7:F0:EE
+Serial: BB:40:1C:43:F5:5E:4F:B0
+Fingerprint (SHA2): 62:DD:0B:E9:B9:F5:0A:16:3E:A0:F8:E7:5C:05:3B:1E:CA:57:EA:55:C8:68:8F:64:7C:68:81:F2:C8:35:7B:95
+5B257B96A465517EB839F3C078665EE83AE7F0EE.pem
+5B257B96A465517EB839F3C078665EE83AE7F0EE.der
+
+SwissSign EV Gold CA 2014 - G22 (intermediate)
+A4:34:AA:E4:E1:5A:55:19:E9:B1:11:FD:08:EC:19:0F:D2:AD:F1:3B:BE:30:81:5C:6E:16:06:55:5C:B3:14:50
+Gold Issuing CAs
+EV Gold G22
+Key-ID: EE:FD:46:CA:F7:27:5E:91:BC:5A:B6:E7:87:CD:0A:FA:55:0A:26:42
+Serial: 81:08:38:3C:C0:07:75:C4:0C:6D:73:6B:E3:30:8B
+Fingerprint (SHA2): A4:34:AA:E4:E1:5A:55:19:E9:B1:11:FD:08:EC:19:0F:D2:AD:F1:3B:BE:30:81:5C:6E:16:06:55:5C:B3:14:50
+EEFD46CAF7275E91BC5AB6E787CD0AFA550A2642.pem
+EEFD46CAF7275E91BC5AB6E787CD0AFA550A2642.der
+
+snb.ch
+get from http://crl.swisssign.net/5B257B96A465517EB839F3C078665EE83AE7F0EE.pem
+
+C4:B5:74:FC:A3:A2:31:BE:1D:31:73:BB:8F:8B:E5:E8:76:14:2C:9E:36:D1:6C:6B:9A:C7:98:11:D2:3E:C4:37
+EEFD46CAF7275E91BC5AB6E787CD0AFA550A2642.pem
+
+
+openssl x509 -noout -text -in EEFD46CAF7275E91BC5AB6E787CD0AFA550A2642.pem 
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            81:08:38:3c:c0:07:75:c4:0c:6d:73:6b:e3:30:8b
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=CH, O=SwissSign AG, CN=SwissSign Gold CA - G2
+        Validity
+            Not Before: Sep 15 16:16:37 2014 GMT
+            Not After : Mar  4 16:16:37 2035 GMT
+        Subject: C=CH, O=SwissSign AG, CN=SwissSign EV Gold CA 2014 - G22
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:bf:8c:56:ed:74:92:1d:39:e4:c5:08:92:94:5a:
+                    0b:bb:1f:8a:e1:50:e2:00:18:16:fe:01:e4:b7:ec:
+                    2b:a3:52:a5:36:89:c9:b6:2f:ac:0f:e5:af:42:41:
+                    13:fc:53:b1:09:77:26:b9:1a:eb:41:60:a6:b4:a1:
+                    f6:95:e0:13:de:14:56:81:36:41:be:0b:88:71:28:
+                    00:86:32:05:06:34:68:0d:e7:2f:d1:84:91:3e:37:
+                    ea:e5:ec:d2:d5:76:55:e8:3a:fb:a0:a0:19:1c:e0:
+                    6a:84:2d:0e:ed:e1:5d:65:79:18:ec:8d:38:0b:65:
+                    9b:34:78:99:dd:49:1f:aa:05:6a:9f:5d:de:45:70:
+                    24:b1:31:50:8f:77:d0:2c:23:cf:0b:74:5c:07:2f:
+                    8f:2f:3e:7c:b8:5e:05:a9:c6:e5:51:46:9d:1a:e7:
+                    b5:14:96:89:1c:d8:40:88:e3:02:40:43:4e:2f:a5:
+                    8f:9e:76:87:d6:8a:cc:5b:c5:11:0e:4d:4a:20:66:
+                    ac:65:64:db:02:25:ae:1f:80:65:ef:0d:62:75:eb:
+                    44:1c:ef:d1:9e:52:38:30:f8:8f:1c:8f:91:30:17:
+                    ed:ff:73:90:9f:6c:d3:23:15:12:66:a5:5a:77:f0:
+                    5e:7e:0a:e1:1c:f7:c7:b7:e6:59:ec:b1:8a:95:0e:
+                    85:29
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                EE:FD:46:CA:F7:27:5E:91:BC:5A:B6:E7:87:CD:0A:FA:55:0A:26:42
+            X509v3 Authority Key Identifier: 
+                keyid:5B:25:7B:96:A4:65:51:7E:B8:39:F3:C0:78:66:5E:E8:3A:E7:F0:EE
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.swisssign.net/5B257B96A465517EB839F3C078665EE83AE7F0EE
+
+                Full Name:
+                  URI:ldap://directory.swisssign.net/CN=5B257B96A465517EB839F3C078665EE83AE7F0EE%2CO=SwissSign%2CC=CH?certificateRevocationList?base?objectClass=cRLDistributionPoint
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://repository.swisssign.com/SwissSign-Gold-CP-CPS.pdf
+
+            Authority Information Access: 
+                CA Issuers - URI:http://swisssign.net/cgi-bin/authority/download/5B257B96A465517EB839F3C078665EE83AE7F0EE
+                OCSP - URI:http://gold-ev-g2.ocsp.swisssign.net/5B257B96A465517EB839F3C078665EE83AE7F0EE
+
+    Signature Algorithm: sha256WithRSAEncryption
+         25:71:85:48:30:9e:c1:59:80:49:82:e7:47:02:30:4c:5c:9a:
+         f6:3d:39:09:0f:c5:c4:1b:30:c1:42:62:f7:ef:04:53:73:eb:
+         98:ae:d0:c9:17:4e:8d:23:85:a2:1e:f3:03:8e:b2:fd:b7:d2:
+         af:f3:60:96:d3:64:e1:9b:32:9b:d4:83:93:11:44:82:bd:0c:
+         2a:b7:6c:3c:00:a8:df:5b:22:31:70:c0:ad:5b:38:3b:76:eb:
+         49:bd:fb:88:0b:c4:92:5d:b7:63:07:e4:b0:20:95:0d:89:d3:
+         5d:b7:f9:1a:1d:63:1b:ef:dd:bf:b9:93:af:c3:67:5f:5d:25:
+         48:17:ae:36:c3:fb:43:d6:b8:ee:7e:e4:34:5a:9e:0a:77:54:
+         42:c8:45:68:c7:00:09:e9:9a:ad:e0:b8:e4:62:2e:e5:43:4b:
+         e3:e8:8a:71:69:fc:22:84:15:18:60:58:88:69:ea:c6:5d:c8:
+         0f:fd:7a:03:be:64:7f:94:ec:ac:cb:68:cb:98:44:d1:df:26:
+         bd:94:ae:04:14:12:e7:ec:38:cd:16:52:a4:17:4b:c4:73:3b:
+         b6:46:5b:f6:ab:81:fc:9c:e0:d7:52:0a:2b:ce:f7:bc:59:06:
+         ba:0e:37:45:da:2c:e9:53:00:06:ee:6e:89:a1:cf:3f:ca:fd:
+         4b:f6:4b:94:fe:23:f0:1f:61:60:a6:7b:b5:71:fc:ac:9e:03:
+         d8:9f:fd:e2:c0:8d:03:67:e6:52:1b:d5:c5:e1:a2:6a:4c:d8:
+         cf:a4:2c:01:a3:36:17:69:42:f5:12:92:30:21:28:e9:33:a1:
+         e7:b3:24:43:7e:45:75:38:3f:9b:4e:27:1c:34:dc:bb:49:57:
+         19:9d:43:14:30:81:73:91:d2:b0:59:4f:ef:5a:14:94:97:d6:
+         72:23:ef:35:91:9c:cc:05:bb:9c:3e:80:16:97:d7:fe:4c:b8:
+         b3:ff:4e:12:42:72:4a:15:81:bd:28:9d:b1:4b:46:7e:ac:88:
+         7e:9d:34:4f:a0:67:95:60:88:c5:9e:0c:e9:30:95:1d:54:31:
+         61:8c:37:0a:0a:34:4c:68:4c:a6:30:2a:7a:6e:31:fb:f8:ab:
+         b1:71:e2:e2:3d:a9:5c:c6:4c:be:b2:7d:6f:3e:49:17:71:54:
+         54:1a:e8:af:61:7a:40:6b:da:46:72:00:a0:42:ab:3f:a3:a5:
+         0a:b5:10:f0:9c:be:7e:07:88:dc:7c:d4:d6:be:fa:2a:9e:2b:
+         e7:76:99:f6:71:74:4b:80:c0:5a:19:21:cc:a4:d5:a4:d6:1c:
+         74:f5:0a:ac:f2:b3:4d:30:96:e9:2f:4a:69:d7:50:16:c6:53:
+         95:69:c3:38:e5:8f:73:78
