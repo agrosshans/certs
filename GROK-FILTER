@@ -1,0 +1,1 @@
+%{TIMESTAMP_ISO8601:date} %{INT:bluecoat_int1} %{IPV4:c_ip} %{USER} %{NOTSPACE} %{IPV4:bluecoat_ip} %{IPV4:bluecoat_ip} %{NOTSPACE} %{NOTSPACE:1} %{NOTSPACE:2} %{WORD} %{QUOTEDSTRING:bluecoat_client_details} %{URI} %{INT}
