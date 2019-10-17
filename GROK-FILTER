@@ -3,3 +3,10 @@
 
 
 %{TIMESTAMP_ISO8601:bluecoat_date} %{INT} %{IPV4:bluecoat_clientip} %{USER:bluecoat_user} %{NOTSPACE} %{IPV4:bluecoat_ip1} %{IPV4:bluecoat_ip2} %{NOTSPACE} %{NOTSPACE} %{NOTSPACE} %{NOTSPACE} %{QUOTEDSTRING:bluecoat_url_category} %{URIPROTO}://(?:%{USER}(?::[^@]*)?@)?(?:%{URIHOST})?(?:%{URIPATHPARAM}) %{SPACE} %{NUMBER:bluecoat_http_response} %{WORD:bluecoat_response_object} %{WORD:bluecoat_method} (%{WORD}%{UNIXPATH}%{GREEDYDATA}|%{WORD}%{UNIXPATH}%{GREEDYDATA}) %{WORD:bluecoat_uriproto} %{JAVACLASS} %{NUMBER:bluecoat_remote_port} (%{URIPATHPARAM:bluecoat_uripathparam} %{URIPARAM:bluecoat_uriparam}|%{URIPATHPARAM:bluecoat_uripathparam}) (\-|\- js) %{QUOTEDSTRING:bluecoat_get_browser} %{GREEDYDATA}
+
+
+
+^Bluecoat\|date=%{YEAR:date}\-%{MONTHNUM:monthnum}\-%{MONTHDAY:monthday}|time=%{HOUR}:%{MINUTE}:%{SECOND})
+
+
+Bluecoat|date=$(date)|time=$(time)|time_taken=$(time-taken)|src_ip=$(c-ip)|user=$(cs-username)|cs_auth_type=$(cs-auth-type)|cs_auth_group=$(cs-auth-group)|x_exception_id=$(x-exception-id)|filter_result=$(sc-filter-result)|category=$(cs-categories)|http_referrer=$(cs(Referer))|status=$(sc-status)|vendor_action=$(s-action)|http_method=$(cs-method)|http_version=$(cs-version)|http_content_type=$(rs(Content-Type))|cs_uri_scheme=$(cs-uri-scheme)|dest=$(cs-host)|uri_port=$(cs-uri-port)|uri_path=$(cs-uri-path)|uri_query=$(cs-uri-query)|uri_extension=$(cs-uri-extension)|http_user_agent=$(cs(User-Agent))|dest_ip=$(s-ip)|bytes_in=$(sc-bytes)|bytes_out=$(cs-bytes)|x_virus_id=$(x-virus-id)
